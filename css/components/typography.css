@@ -1,0 +1,134 @@
+/* Typography Components */
+
+/* Headings */
+.heading {
+    font-family: var(--font-heading);
+    color: var(--text-dark);
+    line-height: 1.2;
+    margin-bottom: var(--spacing-md);
+}
+
+.heading--1 {
+    font-size: 3.5rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+.heading--2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.heading--3 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.heading--4 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Text Styles */
+.text {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+}
+
+.text--lg {
+    font-size: 1.2rem;
+}
+
+.text--sm {
+    font-size: 0.875rem;
+}
+
+.text--bold {
+    font-weight: 600;
+}
+
+.text--italic {
+    font-style: italic;
+}
+
+/* Links */
+.link {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.link:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.link--light {
+    color: var(--text-light);
+}
+
+.link--light:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Lists */
+.list {
+    list-style: none;
+    margin-bottom: var(--spacing-md);
+}
+
+.list--bullet {
+    list-style: disc;
+    padding-left: var(--spacing-lg);
+}
+
+.list--numbered {
+    list-style: decimal;
+    padding-left: var(--spacing-lg);
+}
+
+.list__item {
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Quotes */
+.quote {
+    font-style: italic;
+    padding: var(--spacing-md);
+    border-left: 4px solid var(--primary-color);
+    margin: var(--spacing-md) 0;
+    background: var(--background-light);
+}
+
+.quote__text {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.quote__author {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive Typography */
+@media screen and (max-width: 768px) {
+    .heading--1 {
+        font-size: 2.5rem;
+    }
+
+    .heading--2 {
+        font-size: 2rem;
+    }
+
+    .heading--3 {
+        font-size: 1.75rem;
+    }
+
+    .heading--4 {
+        font-size: 1.25rem;
+    }
+
+    .text--lg {
+        font-size: 1.1rem;
+    }
+} 

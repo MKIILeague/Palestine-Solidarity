@@ -1,0 +1,60 @@
+/* Table Styles */
+/* Base table styles */
+.table-container {
+    max-width: var(--container-narrow);
+    margin: 2rem auto;
+    padding: 0 var(--spacing-md);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--background-light);
+    box-shadow: var(--shadow-md);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.table__caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: var(--spacing-md);
+    color: var(--text-dark);
+    text-align: left;
+    caption-side: top;
+}
+
+.table__header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: var(--spacing-md);
+    text-align: left;
+}
+
+.table__cell {
+    padding: var(--spacing-md);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.table__row:hover {
+    background-color: rgba(0, 104, 71, 0.05);
+}
+
+.table__footer {
+    font-weight: bold;
+    background-color: rgba(0, 104, 71, 0.1);
+}
+
+/* Impact table specific styles */
+.impact-table {
+    --table-trend-up-color: #2ecc71;
+    --table-trend-down-color: var(--secondary-color);
+}
+
+.impact-table .trend-up {
+    color: var(--table-trend-up-color);
+}
+
+.impact-table .trend-down {
+    color: var(--table-trend-down-color);
+} 

@@ -1,0 +1,123 @@
+/* Navigation Styles */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow-md);
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nav__logo-img {
+    height: 60px;
+    width: auto;
+    margin-right: var(--spacing-sm);
+}
+
+.nav__links {
+    display: flex;
+    list-style: none;
+    gap: var(--spacing-lg);
+}
+
+.nav__link {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.nav__link:hover,
+.nav__link--active {
+    color: var(--primary-color);
+}
+
+.nav__burger {
+    display: none;
+    cursor: pointer;
+}
+
+.nav__burger-line {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-dark);
+    margin: 5px;
+    transition: var(--transition);
+}
+
+/* Burger Menu Animation */
+.nav__burger--active .nav__burger-line:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.nav__burger--active .nav__burger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.nav__burger--active .nav__burger-line:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Mobile Navigation */
+@media screen and (max-width: 768px) {
+    .nav__links {
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: var(--text-light);
+        width: 100%;
+        text-align: center;
+        transition: var(--transition);
+        padding: var(--spacing-md);
+        box-shadow: var(--shadow-md);
+    }
+
+    .nav__links--active {
+        right: 0;
+    }
+
+    .nav__burger {
+        display: block;
+    }
+
+    .nav__link {
+        opacity: 0;
+    }
+
+    .nav__links--active .nav__link {
+        opacity: 1;
+        animation: navLinkFade 0.5s ease forwards;
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+} 

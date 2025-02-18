@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palestine Solidarity Movement</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="index.html" class="nav__logo-link"><img src="images/logo.png" alt="Palestine Logo" class="nav__logo-img"> Palestine Solidarity</a>
+            </div>
+            <ul class="nav__links">
+                <li><a href="index.html" class="nav__link nav__link--active">Home</a></li>
+                <li><a href="news.html" class="nav__link">News</a></li>
+                <li><a href="about.html" class="nav__link">About</a></li>
+                <li><a href="get-involved.html" class="nav__link">Get Involved</a></li>
+                <li><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+            <div class="nav__burger">
+                <div class="nav__burger-line"></div>
+                <div class="nav__burger-line"></div>
+                <div class="nav__burger-line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Stand With Palestine</h1>
+                <p class="hero__text">Join us in supporting peace, justice, and human rights</p>
+                <div class="hero__slideshow">
+                    <div class="hero__slide fade">
+                        <img src="images/hero-banner.jpg" alt="Palestine Hero Banner" class="hero__image">
+                    </div>
+                    <div class="hero__slide fade">
+                        <img src="images/advocacy-callout.jpg" alt="Palestine Hero Banner" class="hero__image">
+                    </div>
+                    <div class="hero__slide fade">
+                        <img src="images/news-demonstration.jpg" alt="Palestine Hero Banner" class="hero__image">
+                    </div>
+            
+                    <!-- Next & Prev Buttons -->
+                    <button class="hero__nav hero__nav--prev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="hero__nav hero__nav--next" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dots Indicators -->
+        <div class="hero__dots">
+            <button class="hero__dot" onclick="currentSlide(1)"></button>
+            <button class="hero__dot" onclick="currentSlide(2)"></button>
+            <button class="hero__dot" onclick="currentSlide(3)"></button>
+        </div>
+        
+        <div class="container text-center margin-y--md">
+            <a href="get-involved.html" class="button">Get Involved</a>
+        </div>
+
+        <section class="news">
+            <div class="container">
+                <h2 class="news__title">Latest Updates</h2>
+                <div class="news__ticker">
+                    <!-- News ticker content will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section class="featured">
+            <div class="container">
+                <h2 class="featured__title">How You Can Help</h2>
+                <div class="featured__grid">
+                    <div class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">Donate</h3>
+                            <p class="card__text">Support humanitarian aid efforts</p>
+                            <a href="get-involved.html#donate" class="button">Donate Now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">Volunteer</h3>
+                            <p class="card__text">Join our local initiatives</p>
+                            <a href="get-involved.html#volunteer" class="button">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">Spread Awareness</h3>
+                            <p class="card__text">Share information and educate others</p>
+                            <a href="get-involved.html#awareness" class="button">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h4 class="footer__title">Contact Us</h4>
+                    <p class="footer__text">Email: info@palestinesolidarity.org</p>
+                    <p class="footer__text">Phone: +1 (555) 123-4567</p>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__title">Follow Us</h4>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link">Facebook</a>
+                        <a href="#" class="footer__social-link">Twitter</a>
+                        <a href="#" class="footer__social-link">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__title">Newsletter</h4>
+                    <form class="footer__form">
+                        <input type="email" class="footer__input" placeholder="Enter your email">
+                        <button type="submit" class="footer__button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Palestine Solidarity Movement. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

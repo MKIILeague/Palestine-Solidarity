@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved - Palestine Solidarity Movement</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="index.html" class="nav__logo-link"><img src="images/logo.png" alt="Palestine Logo" class="nav__logo-img"> Palestine Solidarity</a>
+            </div>
+            <ul class="nav__links">
+                <li><a href="index.html" class="nav__link">Home</a></li>
+                <li><a href="news.html" class="nav__link">News</a></li>
+                <li><a href="about.html" class="nav__link">About</a></li>
+                <li><a href="get-involved.html" class="nav__link nav__link--active">Get Involved</a></li>
+                <li><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+            <div class="nav__burger">
+                <div class="nav__burger-line"></div>
+                <div class="nav__burger-line"></div>
+                <div class="nav__burger-line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="involvement-hero">
+            <h1>Make a Difference</h1>
+            <p>Join us in supporting peace and humanitarian efforts</p>
+        </section>
+
+        <section class="donation-section" id="donate">
+            <h2>Support Our Cause</h2>
+            <div class="donation-container">
+                <div class="donation-calculator">
+                    <h3>Donation Impact Calculator</h3>
+                    <div class="calculator-form">
+                        <div class="input-group">
+                            <label for="donation-amount">Donation Amount (RM)</label>
+                            <input type="number" id="donation-amount" min="1" value="50">
+                        </div>
+                        <div class="impact-display">
+                            <div class="impact-item">
+                                <span class="impact-number" id="meals">100</span>
+                                <span class="impact-label">Meals Provided</span>
+                            </div>
+                            <div class="impact-item">
+                                <span class="impact-number" id="medical">25</span>
+                                <span class="impact-label">Medical Supplies</span>
+                            </div>
+                            <div class="impact-item">
+                                <span class="impact-number" id="children">5</span>
+                                <span class="impact-label">Children Supported</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="donation-form">
+                    <h3>Make a Donation</h3>
+                    <form id="donate-form">
+                        <div class="form-group">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Donation Amount</label>
+                            <div class="amount-buttons">
+                                <button type="button" class="amount-btn" data-amount="25">RM25</button>
+                                <button type="button" class="amount-btn active" data-amount="50">RM50</button>
+                                <button type="button" class="amount-btn" data-amount="100">RM100</button>
+                                <button type="button" class="amount-btn custom">Custom</button>
+                            </div>
+                            <div class="custom-amount hidden">
+                                <input type="number" id="custom-amount" placeholder="Enter amount in RM">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="frequency">Donation Frequency</label>
+                            <select id="frequency" required>
+                                <option value="one-time">One-time</option>
+                                <option value="monthly">Monthly</option>
+                                <option value="quarterly">Quarterly</option>
+                                <option value="annually">Annually</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="submit-btn">Donate Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="table-container">
+            <table class="table impact-table">
+                <caption class="table__caption">Our Impact Last Quarter</caption>
+                <thead>
+                    <tr class="table__row">
+                        <th class="table__header">Aid Category</th>
+                        <th class="table__header">People Reached</th>
+                        <th class="table__header">Resources Distributed</th>
+                        <th class="table__header">Impact Trend</th>
+                        <th class="table__header">Priority Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table__row">
+                        <td class="table__cell">Medical Supplies</td>
+                        <td class="table__cell">15,000+</td>
+                        <td class="table__cell">2,500 medical kits</td>
+                        <td class="table__cell"><i class="fas fa-arrow-up trend-up"></i> 15%</td>
+                        <td class="table__cell">High</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">Food Aid</td>
+                        <td class="table__cell">25,000+</td>
+                        <td class="table__cell">75,000 meals</td>
+                        <td class="table__cell"><i class="fas fa-arrow-up trend-up"></i> 20%</td>
+                        <td class="table__cell">Critical</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">Clean Water</td>
+                        <td class="table__cell">20,000+</td>
+                        <td class="table__cell">100,000 liters</td>
+                        <td class="table__cell"><i class="fas fa-arrow-down trend-down"></i> 5%</td>
+                        <td class="table__cell">High</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">Emergency Shelter</td>
+                        <td class="table__cell">5,000+</td>
+                        <td class="table__cell">1,000 shelter kits</td>
+                        <td class="table__cell"><i class="fas fa-arrow-up trend-up"></i> 25%</td>
+                        <td class="table__cell">Critical</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__cell">Education Support</td>
+                        <td class="table__cell">3,000+</td>
+                        <td class="table__cell">5,000 school supplies</td>
+                        <td class="table__cell"><i class="fas fa-arrow-up trend-up"></i> 10%</td>
+                        <td class="table__cell">Medium</td>
+                    </tr>
+                </tbody>
+                <tfoot class="table__footer">
+                    <tr class="table__row">
+                        <td class="table__cell">Total Impact</td>
+                        <td class="table__cell">68,000+ people</td>
+                        <td class="table__cell">Multiple Categories</td>
+                        <td class="table__cell"><i class="fas fa-arrow-up trend-up"></i> 13%</td>
+                        <td class="table__cell">Ongoing</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section class="volunteer-section" id="volunteer">
+            <h2>Volunteer Opportunities</h2>
+            <div class="volunteer-grid">
+                <div class="volunteer-card">
+                    <h3>Community Outreach</h3>
+                    <p>Help organize awareness campaigns and educational events in your local community.</p>
+                    <a href="#volunteer-form" class="submit-btn">Get Started</a>
+                </div>
+                <div class="volunteer-card">
+                    <h3>Event Support</h3>
+                    <p>Assist in organizing and managing rallies, fundraisers, and cultural events.</p>
+                    <a href="#volunteer-form" class="submit-btn">Get Started</a>
+                </div>
+                <div class="volunteer-card">
+                    <h3>Digital Advocacy</h3>
+                    <p>Support our online presence through social media and content creation.</p>
+                    <a href="#volunteer-form" class="submit-btn">Get Started</a>
+                </div>
+            </div>
+
+            <div class="volunteer-form-container" id="volunteer-form">
+                <h3>Sign Up to Volunteer</h3>
+                <form id="volunteer-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="volunteer-name">Full Name</label>
+                            <input type="text" id="volunteer-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="volunteer-email">Email Address</label>
+                            <input type="email" id="volunteer-email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="volunteer-interests">Areas of Interest (Select multiple)</label>
+                        <select id="volunteer-interests" multiple required>
+                            <option value="community">Community Outreach</option>
+                            <option value="events">Event Support</option>
+                            <option value="digital">Digital Advocacy</option>
+                            <option value="education">Educational Programs</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="volunteer-message">Message</label>
+                        <textarea id="volunteer-message" rows="4" placeholder="Tell us about your interests and availability"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </form>
+                <div class="success-message" id="success-message">
+                    Thank you for your interest in volunteering! We'll contact you soon.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@palestinesolidarity.org</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+                <div class="footer__section">
+                    <h4>Follow Us</h4>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link">Facebook</a>
+                        <a href="#" class="footer__social-link">Twitter</a>
+                        <a href="#" class="footer__social-link">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer__section">
+                    <h4>Newsletter</h4>
+                    <form class="footer__form">
+                        <input type="email" class="footer__input" placeholder="Enter your email" required>
+                        <button type="submit" class="footer__button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Palestine Solidarity Movement. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Donation Impact Calculator
+        const donationAmount = document.getElementById('donation-amount');
+        const mealsImpact = document.getElementById('meals');
+        const medicalImpact = document.getElementById('medical');
+        const childrenImpact = document.getElementById('children');
+
+        function updateImpact() {
+            const amount = parseInt(donationAmount.value) || 0;
+            mealsImpact.textContent = Math.floor(amount * 2); // RM1 = 2 meals
+            medicalImpact.textContent = Math.floor(amount * 0.5); // RM1 = 0.5 medical supplies
+            childrenImpact.textContent = Math.floor(amount * 0.1); // RM1 = 0.1 children supported
+        }
+
+        donationAmount.addEventListener('input', updateImpact);
+        updateImpact(); // Initial calculation
+
+        // Donation Amount Buttons
+        const amountButtons = document.querySelectorAll('.amount-btn');
+        const customAmountDiv = document.querySelector('.custom-amount');
+        const customAmountInput = document.getElementById('custom-amount');
+
+        amountButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                amountButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                if (button.classList.contains('custom')) {
+                    customAmountDiv.classList.remove('hidden');
+                    customAmountInput.focus();
+                } else {
+                    customAmountDiv.classList.add('hidden');
+                    const amount = button.getAttribute('data-amount');
+                    donationAmount.value = amount;
+                    updateImpact();
+                }
+            });
+        });
+
+        // Form Submissions
+        const donateForm = document.getElementById('donate-form');
+        const volunteerForm = document.getElementById('volunteer-form');
+        const successMessage = document.getElementById('success-message');
+
+        donateForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Add donation processing logic here
+            alert('Thank you for your donation!');
+            donateForm.reset();
+        });
+
+        volunteerForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            successMessage.style.display = 'block';
+            volunteerForm.reset();
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
